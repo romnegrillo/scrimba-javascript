@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Counter - Project 01</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="container--header">Counter</h1>
+        <h2 class="container--value" id="counter-value">0</h2>
+        
+        <button class="container--increment-button container-button" 
+            id="counter-button"
+            onclick="incrementCounter()">
+            INCREMENT
+        </button>
+
+        <button class="container--save-button container-button" 
+            id="counter-save-button"
+            onclick="saveCounter()">
+            SAVE
+        </button>
+
+        <button class="container--clear-button container-button" 
+            id="counter-clear-button"
+            onclick="clearCounter()">
+        CLEAR
+    </button>
+
+        <p class="id="container--logs" 
+            id="counter-logs">Logs:</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

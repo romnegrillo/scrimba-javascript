@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 500px;
+    margin: auto;
+    box-shadow: 0px 0px 1px #000000;
+    padding: 16px;
+
+    display: grid;
+    grid-template: auto auto / 1fr 1fr;
+    gap: 4px;
+}
+
+.container--input-number {
+    height: 30px;
+}
+
+.container--button-group {
+    margin: 4px 0px;
+    grid-column: -1 / 1;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 4px;
+}
+
+.button {
+    height: 30px;
+}
