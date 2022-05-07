@@ -4,7 +4,7 @@ let litersGallonsEl = document.getElementById("liters-gallons")
 let kgPounds = document.getElementById("kg-pounds")
 
 
-function is_number(number) {
+function isValidNumber(number) {
     return isNaN(parseFloat(number - 0)) ? false : true
 }
 
@@ -12,7 +12,7 @@ function convert() {
     
     let number = numberEl.value.trim()
 
-    if (is_number(number) && number != "") {
+    if (isValidNumber(number) && number != "") {
 
         number = parseFloat(number)
 

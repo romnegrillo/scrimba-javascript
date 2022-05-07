@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <title>Password Generator - Project 05</title>
+</head>
+
+<body>
+    <main class="container">
+        <header class="container--header">
+            <h1 class="header--title">Generate a</h1>
+            <h1 class="header--title text-green">random password</h1>
+            <p class="header--secondary" style="margin-top: 16px">Never use and insecure password again.</p>
+
+            <div class="generate-form">
+                <button class="button" onclick="generatePassword()">
+                    Generate passwords
+                    <span class="material-symbols-outlined">
+                        key
+                    </span>
+                </button>
+
+                <label for="password-len">Password Length:</label>
+                <input type="text" placeholder="Password Length" class="input-text" id="password-len" value="8">
+            </div>
+
+
+        </header>
+
+        <hr>
+
+        <div class="container--password-list">
+            <div class="password-wrapper">
+                <input type="text" placeholder="..." class="input-text password" id="first-password" readonly>
+                <button class="copy-button" onclick="copyPassword('first-password')">
+                    <span class="material-symbols-outlined">
+                        content_copy
+                    </span>
+                </button>
+
+            </div>
+
+            <div class="password-wrapper">
+                <input type="text" placeholder="..." class="input-text password" id="second-password" readonly>
+                <button class="copy-button" onclick="copyPassword('second-password')">
+                    <span class="material-symbols-outlined">
+                        content_copy
+                    </span>
+                </button>
+
+            </div>
+
+            <div class="password-wrapper">
+                <input type="text" placeholder="..." class="input-text password" id="third-password" readonly>
+                <button class="copy-button" onclick="copyPassword('third-password')">
+                    <span class="material-symbols-outlined">
+                        content_copy
+                    </span>
+                </button>
+
+            </div>
+
+            <div class="password-wrapper">
+                <input type="text" placeholder="..." class="input-text password" id="fourth-password" readonly>
+                <button class="copy-button" onclick="copyPassword('fourth-password')">
+                    <span class="material-symbols-outlined">
+                        content_copy
+                    </span>
+                </button>
+
+            </div>
+        </div>
+
+        <p id="message"></p>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
