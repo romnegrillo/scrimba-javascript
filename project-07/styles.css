@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    height: 90vh;
+    max-height: 800px;
+    margin: 16px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+.container>* {
+    width: 100%;
+}
+
+.container--header {
+    padding: 64px 0px;
+    background-color: #3A69D2;
+}
+
+.container--button-group {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    padding: 16px 32px;
+}
+
+.button {
+    width: 100%;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    border: none;
+    height: 30px;
+}
+
+.remove-button {
+    background: none;
+    border: none;
+    text-decoration: none;
+}
+
+.remove-button:hover {
+    text-decoration: underline;
+}
+
+.container--invoice-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 4px 32px;
+    background-color: #1F2937;
+}
+
+
+.invoice-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8px 0px;
+}
+
+.invoice-row--title {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+
+}
+
+#send-invoice-button {
+    background-color: #3A69D2;
+    color: #ffffff;
+    margin-bottom: 64px;
+}
+
+#send-invoice-button:hover {
+    background-color: #2955b2;
+}
+
+.text-extra-small {
+    font-size: 10px;
+}
+
+.text-small {
+    font-size: 12px;
+}
+
+.text-medium {
+    font-size: 24px;
+}
+
+.text-large {
+    font-size: 36px;
+}
+
+.text-grey {
+    color: #D5D4D8;
+}
+
+#total-amount {
+    vertical-align: top;
+}

@@ -36,8 +36,6 @@
 }
 
 .container--button {
-    color: #0f700f;
-    background-color: #daa520;
     font-size: 1.5rem;
     width: 220px;
     padding: 8px;
@@ -45,6 +43,11 @@
     border-radius: 4px;
 }
 
-.container--button:hover {
+.button-gold {
+    color: #0f700f;
+    background-color: #daa520;
+}
+
+.button-gold:hover {
     background-color: #bd8c0e;
 }
